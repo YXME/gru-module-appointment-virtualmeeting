@@ -1,0 +1,7 @@
+<#if error_message?? && error_message?has_content>
+    <div class="alert alert-danger">${error_message}</div>
+</#if>
+<#if host_url?? && host_url?has_content>
+    <p><strong>#i18n{module.appointment.virtualmeeting.task.information.link}:</strong>
+    <a href="${host_url}" target="_blank">${host_url}</a></p>
+</#if>
